@@ -1,0 +1,1 @@
+export const asset = process.env.REACT_APP_ASSETS;

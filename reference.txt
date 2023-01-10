@@ -1,0 +1,5 @@
+Client ID  = 25625761608-g8iccn0kbrpa3mtos40cfk5dc1k8mqke.apps.googleusercontent.com
+Client Secret = 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
+
+Username: donilap353@saturdata.com
+Pass: Vanavil@12#

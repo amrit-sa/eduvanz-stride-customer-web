@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.rounded-1 {
+  border-radius: 1.25rem!important;
+}
+
+.dotted{
+  border : 2px dashed #1E232D;
+}
+
+.step-wrapper {
+  padding: 20px 0;
+  display: none;
+}
+.step-wrapper.active {
+  display: block;
+}
+
+.step-indicator {
+  border-collapse: separate;
+  display: table;
+  margin-left: 0px;
+  position: relative;
+  table-layout: fixed;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 0;
+  padding-top: 20px;
+}
+.step-indicator li {
+  display: table-cell;
+  position: relative;
+  float: none;
+  padding: 0;
+  width: 1%;
+}
+.step-indicator li:after {
+  /* background-color: #ccc; */
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 100%;
+  top: 32px;
+  border: 2px dashed rgb(193 186 186) ;
+}
+.step-indicator li.active:after {
+  /* background-color: #ccc; */
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 100%;
+  top: 32px;
+  border: 2px dashed black ;
+}
+.step-indicator li:after {
+  left: 50%;
+}
+.step-indicator li:last-child:after {
+  display: none;
+}
+.step-indicator li.active .step {
+  /* border-color: #4183D7;
+  color: #4183D7; */
+  background-color: #F0F3FF;
+}
+.step-indicator li.active .caption {
+  color: #404449;
+}
+.step-indicator li.complete:after {
+  background-color: #87D37C;
+}
+.step-indicator li.complete .step {
+  border-color: #87D37C;
+  color: #87D37C;
+}
+.step-indicator li.complete .caption {
+  color: #87D37C;
+}
+.step-indicator .step {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #ccc;
+  font-size: 24px;
+  height: 64px;
+  line-height: 64px;
+  margin: 0 auto;
+  position: relative;
+  width: 64px;
+  z-index: 1;
+}
+.step-indicator .step.active {
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-size: 24px;
+  height: 64px;
+  line-height: 64px;
+  margin: 0 auto;
+  position: relative;
+  width: 64px;
+  z-index: 1;
+}
+.step-indicator .step:hover {
+  cursor: pointer;
+}
+.step-indicator .caption {
+  color: #ccc;
+  padding: 11px 16px;
+}
+
+.activeView {
+  color:black !important
+}
+
+.greyText {
+  color: #7C7C7C !important; 
+}
+/* .details_map{
+position: absolute !important;
+left: 6.22%;
+right: 37.48%;
+top: 45.7%;
+bottom: 46.65%;
+
+background: url(image.png);
+box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
+border-radius: 8px;
+} */
